@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto Social - Explora Patagonia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Menú Global Consistente (Ahora con 5 opciones) -->
+    <header class="header-global">
+        <a href="index.html" class="enlace-logo" title="Volver al Inicio">
+            <img src="img/logo.png" alt="Logo Explora Patagonia" class="logo-img">
+        </a>
+        <nav class="menu-global">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="destinos.html" class="nav-link">Destinos</a>
+            <a href="galeria.html" class="nav-link">Galería</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+            <!-- Principio de Krug: "Usted está aquí" marcado con la clase activo -->
+            <a href="impacto.html" class="nav-link activo">Impacto Social</a>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <!-- Indicador de posición (Breadcrumbs) -->
+        <div class="indicador-posicion">
+            <p>Usted está aquí: <a href="index.html">Inicio</a> &gt; <strong>Impacto Social</strong></p>
+        </div>
+
+        <section class="introduccion-impacto">
+            <h1>Visualización de Impacto: Jornada ReConversar</h1>
+            <p>Datos reales y métricas de acción colectiva orientadas al cuidado del ambiente y la recuperación de nuestro entorno, basados en las ponencias de la jornada y el trabajo del grupo <em>"Somos Río Sustentable"</em>.</p>
+        </section>
+
+        <!-- Sección de la Tabla de Datos -->
+        <section class="seccion-tabla">
+            <table class="tabla-impacto">
+                <!-- Accesibilidad: Descripción clara del propósito de la tabla -->
+                <caption>Métricas de evolución comunitaria e impacto ecológico en el Río Suquía (2026)</caption>
+                
+                <thead>
+                    <!-- Fila de Encabezado Superior con Colspan y Rowspan -->
+                    <tr>
+                        <th rowspan="2">Organización</th>
+                        <th rowspan="2">Tiempo de Evolución</th>
+                        <th colspan="3">Métricas de Acción y Limpieza</th>
+                    </tr>
+                    <!-- Segunda fila del encabezado debido al desglose del colspan -->
+                    <tr>
+                        <th>Voluntarios Activos</th>
+                        <th>Metros Recuperados</th>
+                        <th>Microbasurales Cerrados</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <!-- Fila 1: Uso de Rowspan para agrupar la misma organización en las 3 etapas -->
+                    <tr>
+                        <td rowspan="3" class="celda-organizacion">Somos Río Sustentable</td>
+                        <td>Inicio (Semana 1)</td>
+                        <td>7 amigos</td>
+                        <td>500 metros</td>
+                        <td>0</td>
+                    </tr>
+                    <!-- Fila 2: No incluye la primera celda porque la absorbe el rowspan de arriba -->
+                    <tr>
+                        <td>Desarrollo (Mes 1)</td>
+                        <td>35 voluntarios</td>
+                        <td>1.200 metros</td>
+                        <td>1</td>
+                    </tr>
+                    <!-- Fila 3: Consolidación final de datos de la charla -->
+                    <tr>
+                        <td>Actualidad (Mes 2)</td>
+                        <td>50 voluntarios</td>
+                        <td>2.500 metros</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+                
+                <tfoot>
+                    <tr>
+                        <!-- Colspan para unificar las dos primeras columnas del pie de tabla -->
+                        <td colspan="2"><strong>Impacto Total Logrado</strong></td>
+                        <td>50 Activos</td>
+                        <td>2.500 m recuperados</td>
+                        <td>3 microbasurales erradicados</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer-global">
+        <p>&copy; 2026 Explora Patagonia - Sección de Biociudadanía.</p>
+    </footer>
+</body>
+</html>
